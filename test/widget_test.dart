@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:jerry_store/screens/tom_store/tom_store.dart';
+import 'package:jerry_store/screens/jerry_store/tom_store.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

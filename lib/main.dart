@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jerry_store/screens/tom_store/tom_store.dart';
+import 'package:jerry_store/screens/jerry_store/tom_store.dart';
 
 void main() {
   runApp(const MyApp());
