@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:jerry_store/entity/FakeProductsItems.dart';
-import 'package:jerry_store/screens/tom_store/widget/OfferSection.dart';
-import 'package:jerry_store/screens/tom_store/widget/ProductCard.dart';
-import 'package:jerry_store/screens/tom_store/widget/SearchSection.dart';
-import 'package:jerry_store/screens/tom_store/widget/TopBarSection.dart';
+import 'package:jerry_store/screens/jerry_store/widget/OfferSection.dart';
+import 'package:jerry_store/screens/jerry_store/widget/ProductCard.dart';
+import 'package:jerry_store/screens/jerry_store/widget/SearchSection.dart';
+import 'package:jerry_store/screens/jerry_store/widget/TopBarSection.dart';
 import 'package:jerry_store/theme/ColorsManager.dart';
 
 import 'widget/CheapTomSection.dart';
