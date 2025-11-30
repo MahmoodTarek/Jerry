@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:jerry_store/theme/AppTextStyle.dart';
 import 'package:jerry_store/theme/ColorsManager.dart';
 
 class OfferSection extends StatelessWidget {
@@ -29,8 +30,7 @@ class OfferSection extends StatelessWidget {
                 children: [
                   Text(
                     'Buy 1 Tom and get 2 for free',
-                    style: TextStyle(
-                      fontFamily: 'ibmplex',
+                    style: AppTextStyle.baseFontStyle.copyWith(
                       color: Colors.white,
                       fontSize: 13,
                       fontWeight: FontWeight.w600,
@@ -39,8 +39,7 @@ class OfferSection extends StatelessWidget {
                   SizedBox(height: 8.0),
                   Text(
                     'Adopt Tom! (Free Fail-Free\nGuarantee)',
-                    style: TextStyle(
-                      fontFamily: 'ibmplex',
+                    style: AppTextStyle.baseFontStyle.copyWith(
                       color: Colors.white.withValues(alpha: 0.8),
                       fontSize: 12,
                       fontWeight: FontWeight.w400,

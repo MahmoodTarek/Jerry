@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:jerry_store/theme/AppTextStyle.dart';
 
 import '../../../theme/ColorsManager.dart';
 
@@ -10,22 +11,19 @@ class CheapTomSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+        Text(
           'Cheap tom section',
-          style: TextStyle(
+          style: AppTextStyle.baseFontStyle.copyWith(
             fontSize: 20,
             fontWeight: FontWeight.w600,
-            fontFamily: 'ibmplex',
             color: ColorManager.grayDark,
           ),
         ),
         const Spacer(),
-        const Text(
+        Text(
           'View all',
-          style: TextStyle(
+          style: AppTextStyle.baseFontStyle.copyWith(
             fontSize: 12.0,
-            fontWeight: FontWeight.w500,
-            fontFamily: 'ibmplex',
             color: ColorManager.blueDark,
           ),
         ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jerry_store/theme/ColorsManager.dart';
+import 'package:jerry_store/widget/PriceSection.dart';
+
+import '../../../theme/AppTextStyle.dart';
 
 class ProductCard extends StatelessWidget {
   final String title;
@@ -46,23 +48,19 @@ class ProductCard extends StatelessWidget {
           children: [
             Text(
               title,
-              style: TextStyle(
-                fontFamily: 'ibmplex',
+              style: AppTextStyle.baseFontStyle.copyWith(
                 fontWeight: FontWeight.w600,
                 fontSize: 18,
-                height: 1,
                 color: ColorManager.grayDark,
               ),
             ),
             SizedBox(height: 4),
             SizedBox(
-              height: 50,
+              height: 54,
               child: Text(
                 description,
-                style: TextStyle(
-                  fontFamily: 'ibmplex',
+                style: AppTextStyle.baseFontStyle.copyWith(
                   fontWeight: FontWeight.w400,
-                  height: 1,
                   fontSize: 12,
                   color: ColorManager.grayLight,
                 ),
@@ -70,63 +68,14 @@ class ProductCard extends StatelessWidget {
               ),
             ),
             SizedBox(height: 8),
-            priceSection(),
+            PriceSection(
+              price: price,
+              afterDiscount: afterDiscount,
+              isShoppingCardVisible: true,
+            )
           ],
         ),
       ),
-    );
-  }
-
-  Row priceSection() {
-    String priceMessage = afterDiscount == null
-        ? '$price cheeses'
-        : '$price $afterDiscount cheeses';
-
-    return Row(
-      children: [
-        Expanded(
-          child: Container(
-            decoration: BoxDecoration(
-              color: ColorManager.blueSky,
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: 8),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset('lib/theme/svgs/money.svg'),
-                  Stack(
-                    alignment: Alignment.centerLeft,
-                    children: [
-                      Text(
-                        priceMessage,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: ColorManager.blueDark,
-                        ),
-                      ),
-                      SizedBox(width: 24),
-                      if (afterDiscount != null)
-                        Container(
-                          width: 12,
-                          height: 1,
-                          color: ColorManager.blueDark,
-                        ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-        SizedBox(width: 8),
-        SvgPicture.asset(
-          'lib/theme/svgs/shopping_card.svg',
-          width: 30,
-          height: 30,
-        ),
-      ],
     );
   }
 }
