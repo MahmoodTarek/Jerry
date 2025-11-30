@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jerry_store/theme/ColorsManager.dart';
 
+import '../../../theme/AppTextStyle.dart';
+
 class TopBarSection extends StatelessWidget {
   const TopBarSection({super.key});
 
@@ -19,18 +21,15 @@ class TopBarSection extends StatelessWidget {
           children: [
             Text(
               "Hi, Jerry 👋🏻",
-              style: TextStyle(
+              style: AppTextStyle.baseFontStyle.copyWith(
                 fontSize: 14,
-                fontFamily: 'ibmplex',
-                fontWeight: FontWeight.w500,
                 color: ColorManager.grayDark,
               ),
             ),
             Text(
               "Which Tom do you want to buy?",
-              style: TextStyle(
+              style: AppTextStyle.baseFontStyle.copyWith(
                 fontSize: 12,
-                fontFamily: 'ibmplex',
                 fontWeight: FontWeight.w400,
                 color: ColorManager.grayLight,
               ),
