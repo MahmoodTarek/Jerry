@@ -42,7 +42,7 @@ class TomStore extends StatelessWidget {
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                    maxCrossAxisExtent: 180,
+                    maxCrossAxisExtent: 220,
                     mainAxisSpacing: 16,
                     crossAxisSpacing: 8,
                     mainAxisExtent: 214,

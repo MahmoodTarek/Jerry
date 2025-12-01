@@ -14,6 +14,7 @@ class OfferSection extends StatelessWidget {
           padding: const EdgeInsets.only(top: 16.0),
           child: Container(
             width: double.infinity,
+            height: 92,
             alignment: Alignment.bottomLeft,
             decoration: BoxDecoration(
               color: ColorManager.blueDark,
@@ -23,7 +24,7 @@ class OfferSection extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(left: 12, top: 12, bottom: 12),
+              padding: const EdgeInsets.only(left: 12, top: 8, bottom: 28),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
