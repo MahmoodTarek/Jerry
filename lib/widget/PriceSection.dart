@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:jerry_store/theme/AppTextStyle.dart';
 
 import '../theme/ColorsManager.dart';
 
@@ -26,10 +27,10 @@ class PriceSection extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             color: ColorManager.blueSky,
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(8)
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: 8),
+            padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: 4),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               spacing: 4,
@@ -40,18 +41,15 @@ class PriceSection extends StatelessWidget {
                   children: [
                     Text(
                       priceMessage,
-                      style: TextStyle(
+                      style: AppTextStyle.baseFontStyle.copyWith(
                         fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        fontFamily: 'ibmplex',
-                        height: 1,
                         color: ColorManager.blueDark,
                       ),
                     ),
                     SizedBox(width: 24),
                     if (afterDiscount != null)
                       Container(
-                        width: 12,
+                        width: 10,
                         height: 1,
                         color: ColorManager.blueDark,
                       ),
@@ -66,7 +64,7 @@ class PriceSection extends StatelessWidget {
           SvgPicture.asset(
             'lib/theme/svgs/shopping_card.svg',
             width: 30,
-            height: 30,
+            height: 30
           ),
       ],
     );

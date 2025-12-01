@@ -71,7 +71,7 @@ class ProductCard extends StatelessWidget {
             PriceSection(
               price: price,
               afterDiscount: afterDiscount,
-              isShoppingCardVisible: true,
+              isShoppingCardVisible: true
             )
           ],
         ),
