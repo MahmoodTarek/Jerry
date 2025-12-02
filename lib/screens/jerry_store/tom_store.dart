@@ -5,8 +5,7 @@ import 'package:jerry_store/screens/jerry_store/widget/ProductCard.dart';
 import 'package:jerry_store/screens/jerry_store/widget/SearchSection.dart';
 import 'package:jerry_store/screens/jerry_store/widget/TopBarSection.dart';
 import 'package:jerry_store/theme/ColorsManager.dart';
-
-import 'widget/CheapTomSection.dart';
+import 'package:jerry_store/widget/ViewAllSection.dart';
 
 class TomStore extends StatelessWidget {
   const TomStore({super.key});
@@ -34,10 +33,8 @@ class TomStore extends StatelessWidget {
 
                 OfferSection(),
                 const SizedBox(height: 24.0),
-
-                CheapTomSection(),
+                ViewAllSection(title: 'Cheap tom section'),
                 const SizedBox(height: 16.0),
-
                 GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
