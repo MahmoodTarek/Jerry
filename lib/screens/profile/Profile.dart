@@ -9,9 +9,8 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: ColorManager.blue,
-      body: SafeArea(
+    return Container(
+      color: ColorManager.blue,
         child: Center(
           child: Column(
             children: [
@@ -21,7 +20,6 @@ class Profile extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }
