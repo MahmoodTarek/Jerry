@@ -15,8 +15,7 @@ class EpisodeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
+    return SingleChildScrollView(
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -112,7 +111,6 @@ class EpisodeScreen extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }

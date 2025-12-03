@@ -28,7 +28,6 @@ class IngredientsBottomSheet extends StatelessWidget {
               child: ListView(
                 controller: controller,
                 padding: EdgeInsetsGeometry.only(
-                  bottom: 92,
                   top: 32,
                   right: 16,
                   left: 16,
@@ -107,6 +106,63 @@ class IngredientsBottomSheet extends StatelessWidget {
                   ),
                   SizedBox(height: 8),
                   PreparationMethod(number: 5, step: 'Say Bsm Allah and Eat'),
+                  SizedBox(height: 16),
+                  Container(
+                      width: double.infinity,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        color: ColorManager.blue,
+                      ),
+                      child: Row(
+                        spacing: 8,
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Add to cart',
+                            style: AppTextStyle.baseFontStyle.copyWith(
+                              fontSize: 16,
+                              height: 0.16,
+                              color: Colors.white.withValues(alpha: 0.87),
+                            ),
+                          ),
+                          Container(
+                            width: 5,
+                            height: 5,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.38),
+                              shape: BoxShape.circle,
+                            ),
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                '3 cheeses',
+                                style: AppTextStyle.baseFontStyle.copyWith(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                '5 cheeses',
+                                style: AppTextStyle.baseFontStyle.copyWith(
+                                  fontSize: 12,
+                                  color: Colors.white.withValues(alpha: 0.80),
+                                  decoration: TextDecoration.lineThrough,
+                                  decorationColor: Colors.white.withValues(
+                                    alpha: 0.80,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  SizedBox(height: 8)
                 ],
               ),
             ),
@@ -118,74 +174,6 @@ class IngredientsBottomSheet extends StatelessWidget {
                 width: 150,
                 height: 150,
                 alignment: AlignmentGeometry.topRight,
-              ),
-            ),
-            Positioned(
-              right: 0,
-              left: 0,
-              bottom: 0,
-              child: Container(
-                height: 86,
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 15,
-                    horizontal: 16,
-                  ),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      color: ColorManager.blue,
-                    ),
-                    child: Row(
-                      spacing: 8,
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Add to cart',
-                          style: AppTextStyle.baseFontStyle.copyWith(
-                            fontSize: 16,
-                            height: 0.16,
-                            color: Colors.white.withValues(alpha: 0.87),
-                          ),
-                        ),
-                        Container(
-                          width: 5,
-                          height: 5,
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.38),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              '3 cheeses',
-                              style: AppTextStyle.baseFontStyle.copyWith(
-                                fontSize: 14,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              '5 cheeses',
-                              style: AppTextStyle.baseFontStyle.copyWith(
-                                fontSize: 12,
-                                color: Colors.white.withValues(alpha: 0.80),
-                                decoration: TextDecoration.lineThrough,
-                                decorationColor: Colors.white.withValues(
-                                  alpha: 0.80,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
               ),
             ),
           ],

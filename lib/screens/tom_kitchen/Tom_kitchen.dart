@@ -7,15 +7,13 @@ class TomKitchen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-          child: Stack(
-            children: [
-              Positioned.fill(child: TomKitchenHeader()),
-              IngredientsBottomSheet()
-            ],
-          ),
+    return Container(
+      color: Colors.white,
+        child: Stack(
+          children: [
+            Positioned.fill(child: TomKitchenHeader()),
+            IngredientsBottomSheet(),
+          ],
         ),
     );
   }
