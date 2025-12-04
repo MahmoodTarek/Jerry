@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:jerry_store/entity/FakeCharacters.dart';
-import 'package:jerry_store/entity/FakeEpisodeDetails.dart';
+import 'package:jerry_store/data/FakeCharacters.dart';
+import 'package:jerry_store/data/FakeEpisodeDetails.dart';
 import 'package:jerry_store/screens/epsiode/widget/CharacterCard.dart';
 import 'package:jerry_store/screens/epsiode/widget/EpisodeCard.dart';
 import 'package:jerry_store/screens/epsiode/widget/EpisodeHeaderContent.dart';

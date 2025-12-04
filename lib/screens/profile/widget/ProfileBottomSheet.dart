@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:jerry_store/entity/FakeProfileStats.dart';
+import 'package:jerry_store/data/FakeProfileStats.dart';
 import 'package:jerry_store/screens/profile/widget/profile_bottom_sheet_widget/PrograssCard.dart';
 import 'package:jerry_store/screens/profile/widget/profile_bottom_sheet_widget/SettingsCard.dart';
 import 'package:jerry_store/theme/AppTextStyle.dart';
